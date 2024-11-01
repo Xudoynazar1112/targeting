@@ -149,7 +149,7 @@ const Contact = () => {
   return (
     <div id="contact">
       <div data-aos="fade-up" className="md:w-1/2 w-full">
-        <h1 className="md:text-[2.5rem] text-3xl font-semibold mb-10 font-sans">
+        <h1 className="md:text-[2.5rem] text-3xl font-semibold mb-10 font-sans leading-10">
           Sotuvlaringizni oshirini istaysizmi?{" "}
           <span className="rang">Bepul audit xizmatimizdan foydalaning!</span>
         </h1>
@@ -158,7 +158,7 @@ const Contact = () => {
           va biz tez orada siz bilan bog'lanamiz!
         </p>
       </div>
-      <div data-aos="fade-up">
+      <div data-aos="fade-up" className="mb-52">
         <form
           id="forma"
           onSubmit={SendMessage}
@@ -212,7 +212,7 @@ const Contact = () => {
             onClick={closeModalOnOutsideClick}
           >
             <div
-              className="bg-white p-5 md:px-12 px-5 md:w-[35vw] w-[80vw] max-h-[90%] overflow-auto"
+              className="bg-white p-5 md:px-12 px-5 md:w-[35vw] w-[90vw] max-h-[90%] overflow-auto"
               onClick={(e) => e.stopPropagation()} // Prevents modal close on content click
             >
               <h1 className="uppercase text-4xl text-center mb-10 font-semibold">
