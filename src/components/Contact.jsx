@@ -51,9 +51,7 @@ const CountryDropdown = ({
           className="outline-none w-2/3 bg-gray-100 flex-grow"
         />
       </div>
-      {phoneError && (
-        <p className="text-red-500 text-sm mt-1">{phoneError}</p>
-      )}
+      {phoneError && <p className="text-red-500 text-sm mt-1">{phoneError}</p>}
       {dropdownOpen && (
         <div className="absolute top-full left-0 bg-white border border-gray-200 rounded-lg mt-2 shadow-lg w-full max-h-60 overflow-y-auto">
           {countryData.map((country) => (
@@ -121,7 +119,6 @@ const Contact = () => {
     const business = document.getElementById("business").value;
     const message = `Yangi xabar: \nIsm: ${name} \nTelefon: ${code}${phone} \nBiznes: ${business}`;
     console.log(code);
-    
 
     // if (phoneError) {
     //   toast.error("Please fix validation errors before submitting.");
@@ -148,8 +145,6 @@ const Contact = () => {
         setLoading(false);
       });
   };
-
-  
 
   return (
     <div id="contact">
@@ -240,21 +235,36 @@ const Contact = () => {
                 o’tilgan va ularga o’xshagan muammolar bo’lsa Yechim sababchisi
                 bo’lishga tayyormiz!
               </p>
-              <div className="mt-10 flex flex-col gap-5">
-                <input
-                  type="text"
-                  placeholder="Ismingiz"
-                  className="p-4 w-full rounded-lg outline-none border"
-                />
-                {renderCountryDropdown}
-                <input
-                  type="text"
-                  placeholder="Biznesingiz turi"
-                  className="p-4 border w-full rounded-lg outline-none"
-                />
-                <button className="bg-yellow-400 p-4 rounded-lg font-bold">
-                  ARIZA YUBORISH
-                </button>
+              <div>
+                <form
+                  id="forma"
+                  onSubmit={SendMessage}
+                  className="mt-10 flex flex-col gap-5"
+                >
+                  <input
+                    type="text"
+                    required
+                    id="name"
+                    name="name"
+                    placeholder="Ismingiz"
+                    className="p-4 bg-gray-100 rounded-lg outline-none"
+                  />
+                  {renderCountryDropdown}
+                  <input
+                    type="text"
+                    required
+                    id="business"
+                    name="business"
+                    placeholder="Biznesingiz turi"
+                    className="p-4 bg-gray-100 rounded-lg outline-none"
+                  />
+                  <button
+                    disabled={loading}
+                    className="bg-yellow-400 p-4 rounded-lg font-bold"
+                  >
+                    {loading ? "Yuborilmoqda..." : "YUBORISH"}
+                  </button>
+                </form>
               </div>
               <p className="text-center mt-5">Hoziroq biz bilan bog’laning!</p>
             </div>
