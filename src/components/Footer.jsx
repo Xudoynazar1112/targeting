@@ -5,7 +5,7 @@ import { FaSquareInstagram } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className="flex justify-between bg-black text-white py-5 px-48 mt-10">
+    <div className="flex justify-between md:flex-row flex-col bg-black text-white py-5 md:px-48 px-10 gap-5 mt-10">
       <div>
         <p>Chilonzor 12 kvartal,</p>
         <p>Baraka Market yonida</p>
@@ -16,7 +16,7 @@ const Footer = () => {
           <BsTelephoneFill /> +998 93 169 34 54
         </p>
         <p className="flex items-center gap-3">
-          <IoMail /> raqamli.targeting@gmail.com
+          <IoMail /> targeting@gmail.com
         </p>
       </div>
     </div>
