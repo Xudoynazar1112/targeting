@@ -1,5 +1,7 @@
 import React, { useState, useMemo } from "react";
 import countryData from "./countries.json";
+import axios from "axios";
+import { toast } from "react-toastify";
 
 const CountryDropdown = ({
   selectedCountry,
@@ -7,6 +9,22 @@ const CountryDropdown = ({
   dropdownOpen,
   toggleDropdown,
 }) => {
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [phoneError, setPhoneError] = useState("");
+
+  const handlePhoneNumberChange = (e) => {
+    const value = e.target.value;
+    setPhoneNumber(value);
+
+    // Phone validation: only allow 7 digits as per placeholder
+    const phoneRegex = /^\d{9}$/; // 7 digits only
+    if (!phoneRegex.test(value)) {
+      setPhoneError("Phone number must be exactly 9 digits.");
+    } else {
+      setPhoneError(""); // Clear error if valid
+    }
+  };
+
   return (
     <div className="relative">
       <div className="flex items-center bg-gray-100 p-4 rounded-lg cursor-pointer">
@@ -16,14 +34,26 @@ const CountryDropdown = ({
             alt={selectedCountry.name}
             className="w-6 h-6 mr-2"
           />
-          <span className="mr-1">{selectedCountry.code}</span>
+          <span className="mr-1" id="code">
+            {selectedCountry.code}
+          </span>
         </div>
         <input
-          type="tel"
+          required
+          type="text"
+          id="phone"
+          name="phone"
+          minLength={9}
+          maxLength={9}
+          value={phoneNumber}
+          onChange={handlePhoneNumberChange}
           placeholder="99-999-9999"
           className="outline-none w-2/3 bg-gray-100 flex-grow"
         />
       </div>
+      {phoneError && (
+        <p className="text-red-500 text-sm mt-1">{phoneError}</p>
+      )}
       {dropdownOpen && (
         <div className="absolute top-full left-0 bg-white border border-gray-200 rounded-lg mt-2 shadow-lg w-full max-h-60 overflow-y-auto">
           {countryData.map((country) => (
@@ -77,6 +107,50 @@ const Contact = () => {
     setModalOpen(false);
   };
 
+  const [loading, setLoading] = useState(false);
+
+  const SendMessage = (event) => {
+    setLoading(true);
+    event.preventDefault();
+    const token = "7839782206:AAHj7nvJd5DbXGLrjKtAHrjJjfcEbSQJ3rc";
+    const chat_id = -1002357634205;
+    const url = `https://api.telegram.org/bot${token}/sendMessage`;
+    const name = document.getElementById("name").value;
+    const code = document.getElementById("code").textContent;
+    const phone = document.getElementById("phone").value;
+    const business = document.getElementById("business").value;
+    const message = `Yangi xabar: \nIsm: ${name} \nTelefon: ${code}${phone} \nBiznes: ${business}`;
+    console.log(code);
+    
+
+    // if (phoneError) {
+    //   toast.error("Please fix validation errors before submitting.");
+    //   setLoading(false);
+    //   return;
+    // }
+
+    axios({
+      url: url,
+      method: "POST",
+      data: {
+        chat_id: chat_id,
+        text: message,
+      },
+    })
+      .then((res) => {
+        toast.success("Muvaffaqiyatli yuborildi");
+        document.getElementById("forma").reset();
+      })
+      .catch((error) => {
+        console.error("Xatolik bor:", error);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  };
+
+  
+
   return (
     <div id="contact">
       <div data-aos="fade-up" className="md:w-1/2 w-full">
@@ -89,24 +163,36 @@ const Contact = () => {
           va biz tez orada siz bilan bog'lanamiz!
         </p>
       </div>
-      <div
-        data-aos="fade-up"
-        className="grid md:grid-cols-4 grid-cols-1 gap-5 mt-10"
-      >
-        <input
-          type="text"
-          placeholder="Ismingiz"
-          className="p-4 bg-gray-100 rounded-lg outline-none"
-        />
-        {renderCountryDropdown}
-        <input
-          type="text"
-          placeholder="Biznesingiz turi"
-          className="p-4 bg-gray-100 rounded-lg outline-none"
-        />
-        <button className="bg-yellow-400 p-4 rounded-lg font-bold">
-          YUBORISH
-        </button>
+      <div data-aos="fade-up">
+        <form
+          id="forma"
+          onSubmit={SendMessage}
+          className="grid md:grid-cols-4 grid-cols-1 gap-5 mt-10"
+        >
+          <input
+            type="text"
+            required
+            id="name"
+            name="name"
+            placeholder="Ismingiz"
+            className="p-4 bg-gray-100 rounded-lg outline-none"
+          />
+          {renderCountryDropdown}
+          <input
+            type="text"
+            required
+            id="business"
+            name="business"
+            placeholder="Biznesingiz turi"
+            className="p-4 bg-gray-100 rounded-lg outline-none"
+          />
+          <button
+            disabled={loading}
+            className="bg-yellow-400 p-4 rounded-lg font-bold"
+          >
+            {loading ? "Yuborilmoqda..." : "YUBORISH"}
+          </button>
+        </form>
       </div>
       <div
         data-aos="fade-up"

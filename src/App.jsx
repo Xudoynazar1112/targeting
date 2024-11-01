@@ -7,6 +7,8 @@ import Contact from "./components/Contact";
 import { useEffect } from "react";
 import Aos from "aos";
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   useEffect(() => {
@@ -19,6 +21,7 @@ function App() {
   }, []);
   return (
     <div className="w-full text-black">
+      <ToastContainer />
       <Navbar />
       <div className=" flex flex-col gap-16 md:px-48 px-5">
         <Section1 />
