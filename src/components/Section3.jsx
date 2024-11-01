@@ -10,13 +10,13 @@ import { FaChartPie } from "react-icons/fa";
 
 const Loyiha = ({ head, body1, body2, img }) => {
   return (
-    <div data-aos="fade-up" className="flex md:flex-row flex-col items-center w-[88%] mx-auto bg-[#F7F7F7] gap-20 rounded-xl md:p-10 p-3">
+    <div data-aos="fade-up" className="flex md:flex-row flex-col items-center md:w-[88%] w-full mx-auto bg-[#F7F7F7] gap-20 rounded-xl md:p-10 p-3">
       <div className="md:w-1/2 w-full flex flex-col gap-10">
         <div className="flex">
           <div className="text-yellow-400 text-4xl">
             <GoDotFill />
           </div>
-          <h1 className="text-5xl font-semibold">{head}</h1>
+          <h1 className="md:text-5xl text-3xl font-semibold">{head}</h1>
         </div>
         <div className="flex items-center">
           <div className="text-yellow-400 text-2xl">
@@ -47,30 +47,30 @@ const Section3 = () => {
     <>
       <div className="grid md:grid-cols-3 grid-cols-1 gap-5">
         <div data-aos="fade-up" className="uppercase">
-          <div className="flex items-center">
+          <div className="flex items-center md:justify-start justify-center">
             <img
               src="https://static.tildacdn.one/tild6563-3462-4635-b561-623233646531/1.svg"
               alt="svg"
-              className="w-6 md:mr-5 mr-1"
+              className="md:w-6 w-4 md:mr-5 mr-1"
             />
-            <p className="text-[#81A9AF] font-bold md:text-base text-[8px]">
+            <p className="text-[#81A9AF] font-bold md:text-base text-10">
               Biz nimalar qila olamiz
             </p>
           </div>
-          <p className="md:text-4xl text-xl leading-relaxed font-bold font-serif">
+          <p className="md:text-4xl text-3xl md:text-start text-center leading-relaxed font-black font-serif">
             6 yildan beri kun u tun nima qilamiz:
           </p>
         </div>
         <div
           data-aos="fade-up"
-          className="shadow flex md:h-[28rem] h-[15rem] flex-col justify-between p-7 rounded-xl"
+          className="shadow flex md:h-[28rem] h-[24rem] flex-col justify-between p-7 rounded-xl"
         >
-          <img src={icon1} alt="icon1" className="md:w-24 w-14" />
+          <img src={icon1} alt="icon1" className="md:w-24 w-16" />
           <div>
-            <h1 className="md:text-3xl text-xl mb-4 font-bold">
+            <h1 className="md:text-3xl text-2xl mb-4 font-bold">
               Digital Marketing
             </h1>
-            <p className="md:text-base text-[12px]">
+            <p className="md:text-xl text-md">
               Ijtimoiy media, kontent va qidiruv tizimini optimallashtirish kabi
               keng qamrovli marketing strategiyalari bilan onlayn
               salohiyatingizni maksimal darajada oshirish.
@@ -79,12 +79,12 @@ const Section3 = () => {
         </div>
         <div
           data-aos="fade-up"
-          className="shadow flex md:h-[28rem] h-[15rem] flex-col justify-between p-7 rounded-xl"
+          className="shadow flex md:h-[28rem] h-[24rem] flex-col justify-between p-7 rounded-xl"
         >
-          <img src={icon2} alt="icon2" className="md:w-24 w-14" />
+          <img src={icon2} alt="icon2" className="md:w-24 w-16" />
           <div>
-            <h1 className="md:text-3xl text-xl mb-4 font-bold">Target</h1>
-            <p className="md:text-base text-[12px]">
+            <h1 className="md:text-3xl text-2xl mb-4 font-bold">Target</h1>
+            <p className="md:text-xl text-md">
               Maqsadli ijtimoiy media va qidiruv kampaniyalari bilan maqsadli
               auditoriyangizga erishing. Maqsadli reklama yordamida
               konversiyalarni oshiring.
@@ -93,12 +93,12 @@ const Section3 = () => {
         </div>
         <div
           data-aos="fade-up"
-          className="shadow flex md:h-[28rem] h-[15rem] flex-col justify-between p-7 rounded-xl"
+          className="shadow flex md:h-[28rem] h-[24rem] flex-col justify-between p-7 rounded-xl"
         >
-          <img src={icon3} alt="icon3" className="md:w-24 w-14" />
+          <img src={icon3} alt="icon3" className="md:w-24 w-16" />
           <div>
-            <h1 className="md:text-3xl text-xl mb-4 font-bold">IT yechimlar</h1>
-            <p className="md:text-base text-[12px]">
+            <h1 className="md:text-3xl text-2xl mb-4 font-bold">IT yechimlar</h1>
+            <p className="md:text-xl text-md">
               Operatsiyalaringizni optimal-lashtirish uchun moslashtirilgan
               texnologik echimlar, jumladan, dasturiy ta'minot va bulutli
               texnologiyalar.
@@ -107,12 +107,12 @@ const Section3 = () => {
         </div>
         <div
           data-aos="fade-up"
-          className="shadow flex md:h-[28rem] h-[15rem] flex-col justify-between p-7 rounded-xl"
+          className="shadow flex md:h-[28rem] h-[24rem] flex-col justify-between p-7 rounded-xl"
         >
-          <img src={icon4} alt="icon4" className="md:w-24 w-14" />
+          <img src={icon4} alt="icon4" className="md:w-24 w-16" />
           <div>
-            <h1 className="md:text-3xl text-xl mb-4 font-bold">Website</h1>
-            <p className="md:text-base text-[12px]">
+            <h1 className="md:text-3xl text-2xl mb-4 font-bold">Website</h1>
+            <p className="md:text-xl text-md">
               Korporativdan tortib onlayn-do'konlargacha kuchli onlayn mavjudlik
               uchun noyob va funktsional veb-saytlarni yarating.
             </p>
@@ -120,14 +120,14 @@ const Section3 = () => {
         </div>
         <div
           data-aos="fade-up"
-          className="shadow flex md:h-[28rem] h-[15rem] flex-col justify-between p-7 rounded-xl"
+          className="shadow flex md:h-[28rem] h-[24rem] flex-col justify-between p-7 rounded-xl"
         >
-          <img src={icon5} alt="icon5" className="md:w-24 w-14" />
+          <img src={icon5} alt="icon5" className="md:w-24 w-16" />
           <div>
-            <h1 className="md:text-3xl text-xl mb-4 font-bold">
+            <h1 className="md:text-3xl text-2xl mb-4 font-bold">
               Google & Yandex Reklama
             </h1>
-            <p className="md:text-base text-[12px]">
+            <p className="md:text-xl text-md">
               Maqsadli auditoriyangizni jalb qilib, samarali Google va Yandex
               kompaniyalar yordamida brendingizning ko'rinishini maksimal
               darajada oshiring.
@@ -233,6 +233,24 @@ const Section3 = () => {
           }
           img={"/images/anhor2.jpg"}
         />
+      </div>
+      <div className="flex flex-col gap-5 text-center bg-[#F7F7F7] rounded-xl p-5">
+        <h2 className="uppercase md:text-5xl text-3xl font-bold">bizning mijozlarimiz</h2>
+        <p className="md:text-xl">Bizga ishonch bildirgan kompaniyalar</p>
+        <div className="grid md:grid-cols-4 grid-cols-2 gap-5">
+          <img src="/images/partners/paynet.png" alt="photo" />
+          <img src="/images/partners/chopar.png" alt="photo" />
+          <img src="/images/partners/360.png" alt="photo" />
+          <img src="/images/partners/nova.png" alt="photo" />
+          <img src="/images/partners/imzo.png" alt="photo" />
+          <img src="/images/partners/21.png" alt="photo" />
+          <img src="/images/partners/les.png" alt="photo" />
+          <img src="/images/partners/sputnik.png" alt="photo" />
+          <img src="/images/partners/meraki.png" alt="photo" />
+          <img src="/images/partners/etor.png" alt="photo" />
+          <img src="/images/partners/union.png" alt="photo" />
+          <img src="/images/partners/mahsulot.png" alt="photo" />
+        </div>
       </div>
     </>
   );

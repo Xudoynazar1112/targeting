@@ -148,17 +148,17 @@ const Contact = () => {
 
   return (
     <div id="contact">
-      <div data-aos="fade-up" className="md:w-1/2 w-full">
-        <h1 className="md:text-[2.5rem] text-3xl font-semibold mb-10 font-sans leading-10">
+      <div data-aos="fade-up" className="md:w-1/2 w-full md:text-start text-center">
+        <h1 className="md:text-[2.5rem] text-3xl font-semibold md:mb-10 mb-3 font-sans leading-7">
           Sotuvlaringizni oshirini istaysizmi?{" "}
           <span className="rang">Bepul audit xizmatimizdan foydalaning!</span>
         </h1>
-        <p className="text-xl">
+        <p className="md:text-xl">
           Bizning jamoamiz har doim yangi loyihalarga tayyor, so'rov qoldiring
           va biz tez orada siz bilan bog'lanamiz!
         </p>
       </div>
-      <div data-aos="fade-up" className="mb-52">
+      <div data-aos="fade-up" className="md:mb-52 mb-28">
         <form
           id="forma"
           onSubmit={SendMessage}
@@ -191,17 +191,17 @@ const Contact = () => {
       </div>
       <div
         data-aos="fade-up"
-        className="bg-yellow-400 p-5 py-10 mt-5 rounded-xl flex justify-center flex-col items-center gap-10"
+        className="bg-yellow-400 p-5 py-10 md:mt-5 rounded-xl flex justify-center flex-col items-center gap-10"
       >
         <div className="text-center flex flex-col justify-center items-center gap-2">
           <h1 className="uppercase font-bold md:text-6xl text-4xl">bu muhim</h1>
-          <p className="md:text-2xl text-xl md:w-2/3 w-full">
+          <p className="md:text-2xl text-lg md:w-2/3 w-full">
             Aslo pasdagi tugmani bosmang <b>savdolaringiz</b> katta hajimda{" "}
             <b>oshib ketish</b> ehtimoli bor
           </p>
         </div>
         <button
-          className="uppercase bg-[#F64226] text-white text-3xl p-7 px-16"
+          className="uppercase bg-[#F64226] text-white md:text-3xl text-2xl md:py-7 md:px-16 px-12"
           onClick={toggleModal}
         >
           Bosmang

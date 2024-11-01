@@ -23,7 +23,7 @@ function App() {
     <div className="w-full text-black">
       <ToastContainer />
       <Navbar />
-      <div className=" flex flex-col gap-16 md:px-48 px-5">
+      <div className=" flex flex-col gap-16 md:px-48 px-10">
         <Section1 />
         <Section2 />
         <Section3 />
