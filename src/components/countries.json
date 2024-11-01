@@ -1,14 +1,14 @@
 [
-    { "name": "Uzbekistan", "code": "+998", "flag": "/src/assets/flags/4x3/uz.svg" },
-    { "name": "Andorra", "code": "+376", "flag": "/src/assets/flags/4x3/ad.svg" },
-    { "name": "Arab Emirates", "code": "+971", "flag": "/src/assets/flags/4x3/ae.svg" },
-    { "name": "Afghanistan", "code": "+93", "flag": "/src/assets/flags/4x3/af.svg" },
-    { "name": "Antigua and Barbuda", "code": "+1", "flag": "/src/assets/flags/4x3/ag.svg" },
-    { "name": "Qozog'iston", "code": "+7", "flag": "/src/assets/flags/4x3/kz.svg" },
-    { "name": "Qirg'iziston", "code": "+996", "flag": "/src/assets/flags/4x3/kg.svg" },
-    { "name": "Tojikiston", "code": "+992", "flag": "/src/assets/flags/4x3/tj.svg" },
-    { "name": "Turkmaniston", "code": "+993", "flag": "/src/assets/flags/4x3/tm.svg" },
-    { "name": "Rassiya", "code": "+7", "flag": "/src/assets/flags/4x3/ru.svg" },
-    { "name": "Turkiya", "code": "+90", "flag": "/src/assets/flags/4x3/tr.svg" }
+    { "name": "Uzbekistan", "code": "+998", "flag": "/images/flags/uz.svg" },
+    { "name": "Andorra", "code": "+376", "flag": "/images/flags/ad.svg" },
+    { "name": "Arab Emirates", "code": "+971", "flag": "/images/flags/ae.svg" },
+    { "name": "Afghanistan", "code": "+93", "flag": "/images/flags/af.svg" },
+    { "name": "Antigua and Barbuda", "code": "+1", "flag": "/images/flags/ag.svg" },
+    { "name": "Qozog'iston", "code": "+7", "flag": "/images/flags/kz.svg" },
+    { "name": "Qirg'iziston", "code": "+996", "flag": "/images/flags/kg.svg" },
+    { "name": "Tojikiston", "code": "+992", "flag": "/images/flags/tj.svg" },
+    { "name": "Turkmaniston", "code": "+993", "flag": "/images/flags/tm.svg" },
+    { "name": "Rassiya", "code": "+7", "flag": "/images/flags/ru.svg" },
+    { "name": "Turkiya", "code": "+90", "flag": "/images/flags/tr.svg" }
 ]
   

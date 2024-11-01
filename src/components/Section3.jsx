@@ -1,9 +1,9 @@
 import React from "react";
-import icon1 from "/src/assets/icon1.png";
-import icon2 from "/src/assets/icon2.png";
-import icon3 from "/src/assets/icon3.png";
-import icon4 from "/src/assets/icon4.png";
-import icon5 from "/src/assets/icon5.png";
+import icon1 from "/images/icon1.png";
+import icon2 from "/images/icon2.png";
+import icon3 from "/images/icon3.png";
+import icon4 from "/images/icon4.png";
+import icon5 from "/images/icon5.png";
 
 const Loyiha = ({ direc, bg, head, body, price, count }) => {
   return (
@@ -133,7 +133,7 @@ const Section3 = () => {
       <div className="flex flex-col gap-7">
         <Loyiha
           direc={true}
-          bg={"/src/assets/ahaaqayum2.jpg"}
+          bg={"/images/ahaaqayum2.jpg"}
           head={"Ahad Qayum Producer Actor"}
           body={
             "O'zbek kinosi namoyondalaridan Ahad Qayum ham bizni tavsiya qiladi"
@@ -143,7 +143,7 @@ const Section3 = () => {
         />
         <Loyiha
           direc={false}
-          bg={"/src/assets/aksesuarlar2.jpg"}
+          bg={"/images/aksesuarlar2.jpg"}
           head={"Zamonaviy Aksessuarlar"}
           body={"Zamonaviy aksessuar xizmatlari"}
           price={"0.10$"}
@@ -151,7 +151,7 @@ const Section3 = () => {
         />
         <Loyiha
           direc={true}
-          bg={"/src/assets/anhor2.jpg"}
+          bg={"/images/anhor2.jpg"}
           head={"Anhor Park"}
           body={
             "Toshkentdagi eng katta istirohat bog‘laridan biri bo‘lib, ochiq havoda joylashgan va yil davomida faoliyat yuritadi"
@@ -161,7 +161,7 @@ const Section3 = () => {
         />
         <Loyiha
           direc={false}
-          bg={"/src/assets/dermatologiya.jpg"}
+          bg={"/images/dermatologiya.jpg"}
           head={"Respublika dermatologiya va venerologiya markazi"}
           body={
             "Terining sog‘lig‘i va go‘zalligiga bag‘ishlangan professional xizmatlar."
@@ -171,7 +171,7 @@ const Section3 = () => {
         />
         <Loyiha
           direc={true}
-          bg={"/src/assets/honey.jpg"}
+          bg={"/images/honey.jpg"}
           head={"Max Power tabiiy tog’ asali"}
           body={"Sifatli asal xizmatlari va max power tabiiy tog’ asali"}
           price={"1$"}
@@ -179,7 +179,7 @@ const Section3 = () => {
         />
         <Loyiha
           direc={false}
-          bg={"/src/assets/imanem.jpg"}
+          bg={"/images/imanem.jpg"}
           head={"Ayollar kiyimlari"}
           body={"Istalgan turdagi ayollar kiyimlari"}
           price={"0.33$"}
@@ -187,7 +187,7 @@ const Section3 = () => {
         />
         <Loyiha
           direc={true}
-          bg={"/src/assets/itTime.jpg"}
+          bg={"/images/itTime.jpg"}
           head={"O'quvmarkaz It Dasturlash"}
           body={"Ko'p yillik tajribaga ega ustozlardan o'quv"}
           price={"0.32$"}
@@ -195,7 +195,7 @@ const Section3 = () => {
         />
         <Loyiha
           direc={false}
-          bg={"/src/assets/kasmetolog.jpg"}
+          bg={"/images/kasmetolog.jpg"}
           head={"Kosmetolog Dietolog"}
           body={"Kosmetolog va dietitologiya bo'yicha mutahasis"}
           price={"0.12$"}
@@ -203,7 +203,7 @@ const Section3 = () => {
         />
         <Loyiha
           direc={true}
-          bg={"/src/assets/ozdvkm.jpg"}
+          bg={"/images/ozdvkm.jpg"}
           head={"Respublika dermatologiya va venerologiya markazi"}
           body={
             "Terining sog‘lig‘i va go‘zalligiga bag‘ishlangan professional xizmatlar."
@@ -213,7 +213,7 @@ const Section3 = () => {
         />
         <Loyiha
           direc={false}
-          bg={"/src/assets/stolotolg3.jpg"}
+          bg={"/images/stolotolg3.jpg"}
           head={"Stomotolog"}
           body={"Stomotolog va pediatr xizmatlari"}
           price={"0.55$"}
@@ -221,7 +221,7 @@ const Section3 = () => {
         />
         <Loyiha
           direc={true}
-          bg={"/src/assets/telefon.jpg"}
+          bg={"/images/telefon.jpg"}
           head={"Telefon Oldi sotisi Iphone Samsung"}
           body={"Har hil turdagi telefonlar oldi sotdisi"}
           price={"0.17$"}
@@ -229,7 +229,7 @@ const Section3 = () => {
         />
         <Loyiha
           direc={false}
-          bg={"/src/assets/uzBisnesCard.jpg"}
+          bg={"/images/uzBisnesCard.jpg"}
           head={"Uybozor"}
           body={"Qulay va zamonaviy uylar sizni kutmoqda!"}
           price={"0.33$"}

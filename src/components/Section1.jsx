@@ -1,6 +1,6 @@
 import React from "react";
 import { RiCashFill } from "react-icons/ri";
-import hero from "/src/assets/main-hero.png";
+import hero from "/images/main-hero.png";
 
 const Section1 = () => {
   return (
