@@ -60,10 +60,109 @@ button:focus-visible {
 }
 .sariq {
   text-decoration: underline;
-  color: #FEC901;
+  color: #fec901;
 }
 .rang {
-  color: #FEC901;
+  color: #fec901;
+}
+.hero {
+  height: 30rem;
+  width: 29.5rem;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background-color: #fec901;
+}
+.hero img {
+  width: 29.5rem;
+  position: absolute;
+  right: 32.7rem;
+  bottom: -5.5rem;
+}
+.hero .bordered {
+  position: absolute;
+  border: 0.2rem solid #fec901;
+  border-radius: 1rem;
+  background-color: transparent;
+  bottom: -5rem;
+  right: 37rem;
+  width: 22%;
+  margin: auto;
+  text-align: center;
+  padding: 0.5rem;
+}
+.hero .bordered span {
+  position: absolute;
+  left: 6rem;
+  background-color: #fec901;
+  padding: 0.1rem 1rem;
+  border-radius: 1rem;
+  top: -1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.hero .bordered .hero-text {
+  background-color: #045360;
+  color: white;
+  border-radius: 1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+.hero .hero-text h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hero {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero img {
+    width: 100%;
+    position: static;
+    bottom: 0;
+  }
+
+  .hero .bordered {
+    width: 60%;
+    margin: 1rem auto;
+    right: 7rem;
+    bottom: 1rem;
+    border-width: 0.15rem;
+  }
+
+  .hero .bordered span {
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.1rem 0.5rem;
+  }
+
+  .hero .bordered .hero-text {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .hero .hero-text h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 1rem;
+  }
+
+  .hero img {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .hero .bordered {
+    display: none;
+  }
 }
 
 @media (prefers-color-scheme: light) {
