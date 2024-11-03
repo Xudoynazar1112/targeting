@@ -8,7 +8,6 @@ const Footer = () => {
     <div className="dark:text-white dark:bg-gray-900 flex justify-between md:items-start items-center md:flex-row flex-col bg-black text-white py-5 md:px-48 px-10 gap-5 mt-10">
       <div>
         <p>Alisher Navoiy ko'chasi, 11A, Toshkent</p>
-        {/* <p>Baraka Market yonida</p> */}
       </div>
       <div className="flex items-center gap-3"><FaSquareInstagram /> Instagram</div>
       <div>

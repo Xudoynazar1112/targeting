@@ -261,15 +261,15 @@ const Section3 = () => {
           bizning mijozlarimiz
         </h2>
         <p className="md:text-xl">Bizga ishonch bildirgan kompaniyalar</p>
-        <div className="grid md:grid-cols-4 grid-cols-2 place-content-center justify-center">
-          <img src="/images/star-remove.png" className="rounded-xl p-5 h-72" alt="photo" />
-          <img src="/images/uy-removebg-preview.png" className="rounded-xl p-5 h-72" alt="photo" />
-          <img src="/images/shake_pear-removebg-preview.png" className="rounded-xl p-5 h-72" alt="photo" />
-          <img src="/images/buxoriy-removebg-preview.png" className="rounded-xl p-5 h-72" alt="photo" />
-          <img src="/images/yostiq-removebg-preview.png" className="rounded-xl p-5 h-72" alt="photo" />
-          <img src="/images/oyinchoq.jpg" className="rounded-xl p-5 h-72" alt="photo" />
-          <img src="/images/erkak-kiyim.jpg" className="rounded-xl p-5 h-72" alt="photo" />
-          <img src="/images/itTime-removebg-preview.png" className="rounded-xl p-5 h-72" alt="photo" />
+        <div className="grid md:grid-cols-4 grid-cols-1 gap-5 place-content-center justify-center">
+          <img src="/images/star-remove.png" className="rounded-xl md:p-5 md:h-72  h-60" alt="photo" />
+          <img src="/images/uy-removebg-preview.png" className="rounded-xl md:p-5 md:h-72 h-60" alt="photo" />
+          <img src="/images/shake_pear-removebg-preview.png" className="rounded-xl md:p-5 md:h-72 h-60" alt="photo" />
+          <img src="/images/buxoriy-removebg-preview.png" className="rounded-xl md:p-5 md:h-72 h-60" alt="photo" />
+          <img src="/images/yostiq-removebg-preview.png" className="rounded-xl md:p-5 md:h-72 h-60" alt="photo" />
+          <img src="/images/oyinchoq.jpg" className="rounded-xl md:p-5 md:h-72 h-60" alt="photo" />
+          <img src="/images/erkak-kiyim.jpg" className="rounded-xl md:p-5 md:h-72 h-60" alt="photo" />
+          <img src="/images/itTime-removebg-preview.png" className="rounded-xl md:p-5 md:h-72 h-60" alt="photo" />
         </div>
       </div>
     </>
