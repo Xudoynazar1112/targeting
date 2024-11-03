@@ -5,18 +5,18 @@ import { FaSquareInstagram } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className="flex justify-between md:items-start items-center md:flex-row flex-col bg-black text-white py-5 md:px-48 px-10 gap-5 mt-10">
+    <div className="dark:text-white dark:bg-gray-900 flex justify-between md:items-start items-center md:flex-row flex-col bg-black text-white py-5 md:px-48 px-10 gap-5 mt-10">
       <div>
-        <p>Chilonzor 12 kvartal,</p>
-        <p>Baraka Market yonida</p>
+        <p>Alisher Navoiy ko'chasi, 11A, Toshkent</p>
+        {/* <p>Baraka Market yonida</p> */}
       </div>
       <div className="flex items-center gap-3"><FaSquareInstagram /> Instagram</div>
       <div>
         <p className="flex items-center gap-3">
-          <BsTelephoneFill /> +998 93 169 34 54
+          <BsTelephoneFill /> +998 77 362 88 88
         </p>
         <p className="flex items-center gap-3">
-          <IoMail /> targeting@gmail.com
+          <IoMail /> izzatbek.latifovuz@gmail.com
         </p>
       </div>
     </div>

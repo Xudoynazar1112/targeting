@@ -19,26 +19,27 @@ const Section1 = () => {
         {/* Left box */}
         <div
           data-aos="fade-up"
-          className="bg-slate-100 md:w-[20rem] w-full h-[22rem] flex md:flex-row md:items-start flex-col items-center rounded-xl p-10 text-4xl"
+          className="bg-slate-100 dark:text-white dark:bg-gray-900 md:w-[20rem] w-full h-[22rem] flex md:items-start flex-col items-center rounded-xl p-10 text-4xl"
         >
           <RiCashFill className="text-[#FEC901] mb-10" />
           <p>Kechagidan ko'proq soting</p>
         </div>
         {/* Image box */}
         <div data-aos="fade-up" className="hero">
-          <img src={hero} alt="photo" />
+          {/* <img src={hero} alt="photo" />
           <div className="bordered">
             <span>izzat.digital <SiTicktick /></span>
             <p className="hero-text">
               <h2>Latifov Izzatbek</h2>
               <p>Targetolog</p>
             </p>
-          </div>
+          </div> */}
+          <img src="/images/custom-hero.png" alt="photo" />
         </div>
         {/* Right box */}
         <div
           data-aos="fade-up"
-          className="bg-slate-100 md:w-[20rem] w-full md:text-start text-center h-[22rem] rounded-xl p-10 text-xl flex flex-col gap-10 pr-14 font-semibold"
+          className="bg-slate-100 dark:text-white dark:bg-gray-900 md:w-[20rem] w-full md:text-start h-[22rem] rounded-xl md:p-10 p-3 text-xl flex flex-col gap-10  font-semibold"
         >
           <p>
             O'ylab o'tirishga xojat yo'q deb nomlangan{" "}

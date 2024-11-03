@@ -149,7 +149,7 @@ const Contact = () => {
   return (
     <div id="contact">
       <div data-aos="fade-up" className="md:w-1/2 w-full md:text-start text-center">
-        <h1 className="md:text-[2.5rem] text-3xl font-semibold md:mb-10 mb-3 font-sans leading-7">
+        <h1 className="md:text-[2.5rem] text-3xl font-semibold md:mb-10 mb-3 font-sans leading-10">
           Sotuvlaringizni oshirini istaysizmi?{" "}
           <span className="rang">Bepul audit xizmatimizdan foydalaning!</span>
         </h1>
@@ -194,8 +194,8 @@ const Contact = () => {
         className="bg-yellow-400 p-5 py-10 md:mt-5 rounded-xl flex justify-center flex-col items-center gap-10"
       >
         <div className="text-center flex flex-col justify-center items-center gap-2">
-          <h1 className="uppercase font-bold md:text-6xl text-4xl">bu muhim</h1>
-          <p className="md:text-2xl text-lg md:w-2/3 w-full">
+          <h1 className="dark:text-black uppercase font-bold md:text-6xl text-4xl">bu muhim</h1>
+          <p className="dark:text-black md:text-2xl text-lg md:w-2/3 w-full">
             Aslo pasdagi tugmani bosmang <b>savdolaringiz</b> katta hajimda{" "}
             <b>oshib ketish</b> ehtimoli bor
           </p>
@@ -212,7 +212,7 @@ const Contact = () => {
             onClick={closeModalOnOutsideClick}
           >
             <div
-              className="bg-white p-5 md:px-12 px-5 md:w-[35vw] w-[90vw] max-h-[90%] overflow-auto"
+              className="bg-white dark:bg-gray-900 dark:text-white p-5 md:px-12 px-5 md:w-[35vw] w-[90vw] max-h-[90%] overflow-auto"
               onClick={(e) => e.stopPropagation()} // Prevents modal close on content click
             >
               <h1 className="uppercase text-4xl text-center mb-10 font-semibold">
