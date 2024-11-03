@@ -11,7 +11,7 @@ const Section2 = () => {
           Biz haqimizda
         </h1>
         <p className="md:text-3xl text-xl mt-5 leading-relaxed font-medium font-serif">
-          Raqamli marketing agentlikda biz shunchaki reklama qilishdan ko'proq
+          Bek media agentlikda biz shunchaki reklama qilishdan ko'proq
           narsani qilamiz; ajoyib tajribalar yaratamiz. Jamoamiz bilan birgalik
           sizning brendingizni uchun raqamli yechimlar bera olamiz.
         </p>

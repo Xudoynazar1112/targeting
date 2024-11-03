@@ -218,7 +218,7 @@ const Contact = () => {
               <h1 className="uppercase text-4xl text-center mb-10 font-semibold">
                 bosdingizmi - demak:
               </h1>
-              <ol className="list-decimal font-semibold font-serif text-sm leading-7 ml-4">
+              <ol className="list-decimal font-semibold font-serif text-sm leading-5 ml-4">
                 <li>Hozirgi savdo hajmi sizni qoniqtirmayapti</li>
                 <li>
                   Hozirgi reklamaga sarflanayotgan pul o’zini qoplamayapti
@@ -230,16 +230,11 @@ const Contact = () => {
                   Sizning Businessingiz taniqliligi sizni qoniqtirmayapti...
                 </li>
               </ol>
-              <p className="text-red-600 font-semibold font-serif text-sm mt-5 leading-6">
-                Bu ro’yxatni juda uzoq davom ettirsak bo’ladi! Agar tepada sanab
-                o’tilgan va ularga o’xshagan muammolar bo’lsa Yechim sababchisi
-                bo’lishga tayyormiz!
-              </p>
               <div>
                 <form
                   id="forma"
                   onSubmit={SendMessage}
-                  className="mt-10 flex flex-col gap-5"
+                  className="mt-7 flex flex-col gap-3"
                 >
                   <input
                     type="text"

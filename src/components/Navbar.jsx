@@ -15,8 +15,8 @@ const Navbar = () => {
       <div className="flex items-center">
         <img src={logo} alt="logo" className="md:w-16 w-10" />
         <div className="flex flex-col text-black dark:text-white bg-white dark:bg-gray-900 md:text-xl text-sm">
-          <span>Raqamli</span>
-          <span>Marketing</span>
+          <span>Bek</span>
+          <span>Media</span>
         </div>
       </div>
       <div className="flex items-center">
