@@ -9,7 +9,7 @@ const Footer = () => {
       <div>
         <p>Alisher Navoiy ko'chasi, 11A, Toshkent</p>
       </div>
-      <div className="flex items-center gap-3"><FaSquareInstagram /> Instagram</div>
+      <a href="https://www.instagram.com/latifov_izzat/" className="flex items-center gap-3 text-white"><FaSquareInstagram /> Instagram</a>
       <div>
         <p className="flex items-center gap-3">
           <BsTelephoneFill /> +998 77 362 88 88
