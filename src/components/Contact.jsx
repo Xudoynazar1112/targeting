@@ -162,7 +162,7 @@ const Contact = () => {
         <form
           id="forma"
           onSubmit={SendMessage}
-          className="grid md:grid-cols-4 grid-cols-1 gap-5 mt-10"
+          className="grid md:grid-cols-4 grid-cols-1 gap-5 mt-10 text-black"
         >
           <input
             type="text"
@@ -234,7 +234,7 @@ const Contact = () => {
                 <form
                   id="forma"
                   onSubmit={SendMessage}
-                  className="mt-7 flex flex-col gap-3"
+                  className="mt-7 flex flex-col gap-3 text-black"
                 >
                   <input
                     type="text"
